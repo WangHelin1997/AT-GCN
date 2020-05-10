@@ -1,7 +1,7 @@
 # AT-GCN
 Pytorch implementation of the paper : Modeling Label Dependencies for Audio Tagging with Graph Convolutional Network
 
-## The whole codes are coming soon!
+## The whole code is coming soon!
 
 
 ## References
