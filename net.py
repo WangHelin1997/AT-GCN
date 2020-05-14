@@ -30,7 +30,8 @@ def gen_A(num_classes, t, adj_file):
     _nums = _nums[:, np.newaxis]
     _adj = _adj / _nums
     _adj[_adj < t] = 0
-    _adj[_adj >= t] = 1
+    #_adj[_adj >= t] = 1
+    # p is set to 0.2
     _adj = _adj * 0.2 / (_adj.sum(0, keepdims=True) + 1e-6)
     _adj = _adj + np.identity(num_classes, np.int)
     return _adj
@@ -189,7 +190,7 @@ class GraphConvolution(nn.Module):
 
 
 class GCNnet(nn.Module):
-    def __init__(self, num_classes=527, in_channel=300, t=0, adj_file=None):
+    def __init__(self, num_classes=527, in_channel=300, t=0.3, adj_file=None):
         super(GCNnet, self).__init__()
         self.num_classes = num_classes
 
@@ -239,7 +240,7 @@ class gcnNet(nn.Module):
             for p in self.parameters():
                 p.requires_grad=False
         
-        self.gcn = GCNnet(num_classes=527, in_channel=300, t=0.2, adj_file=adj)
+        self.gcn = GCNnet(num_classes=527, in_channel=300, t=0.3, adj_file=adj)
 #         self.alpha = nn.Parameter(torch.cuda.FloatTensor([.5, .5]))
 
         with open(inp, 'rb') as f:
