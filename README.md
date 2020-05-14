@@ -4,7 +4,7 @@ Pytorch implementation of the paper : Modeling Label Dependencies for Audio Tagg
 ## To start
 ```
 This code is based on https://github.com/MaigoAkisame/cmu-thesis.
-You can run it by replace the files in https://github.com/MaigoAkisame/cmu-thesis/tree/master/code/audioset by the files we provide.
+You can run it by replacing the files in https://github.com/MaigoAkisame/cmu-thesis/tree/master/code/audioset by the files we provide.
 ```
 
 ```
