@@ -12,6 +12,18 @@ Also, you can follow another code https://github.com/qiuqiangkong/audioset_taggi
 Simply add the model in net.py to https://github.com/qiuqiangkong/audioset_tagging_cnn/blob/master/pytorch/models.py.
 ```
 
+## Citation
+If this code is helpful, please feel free to cite the following papers:
+```
+@article{wang2020modeling,
+  title={Modeling Label Dependencies for Audio Tagging with Graph Convolutional Network},
+  author={Wang, Helin and Zou, Yuexian and Chong, Dading and Wang, Wenwu},
+  journal={IEEE Signal Processing Letters},
+  year={2020},
+  publisher={IEEE}
+}
+```
+
 ## References
 * Yun Wang, Juncheng Li and Florian Metze, "A comparison of five multiple instance learning pooling functions for sound event detection with weak labeling," arXiv e-prints, Oct. 2018. [Online]. Available: <http://arxiv.org/abs/1810.09050>.
 https://github.com/MaigoAkisame/cmu-thesis
